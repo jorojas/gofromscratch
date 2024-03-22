@@ -22,4 +22,4 @@ go.work
 
 #Additional files
 main
-commit.sh
+#commit.sh

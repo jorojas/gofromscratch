@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/jorojas/gofromscratch/exercises"
+	"github.com/jorojas/gofromscratch/keyboard"
 	"github.com/jorojas/gofromscratch/variables"
 )
 
@@ -35,4 +36,6 @@ func main() {
 	num, msg := exercises.ConvertToInt("hola")
 
 	fmt.Printf("%d %s\n", num, msg)
+
+	keyboard.InputNumbers()
 }
