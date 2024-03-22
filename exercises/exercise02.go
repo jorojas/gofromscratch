@@ -7,13 +7,16 @@ import (
 	"strconv"
 )
 
-func ShowMultiplicationTable() {
+func ShowMultiplicationTable() string {
 	fmt.Println("Bienvenido a la tabla de multiplicar. Por favor ingresa un número del 1 al 10 : ")
 	num := getNumberFromInput()
+	var text string
 
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d \n", num, i, (num * i))
+		text += fmt.Sprintf("%d x %d = %d \n", num, i, (num * i))
 	}
+
+	return text
 }
 
 func getNumberFromInput() int {

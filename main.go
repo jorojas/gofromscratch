@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/jorojas/gofromscratch/exercises"
+	"github.com/jorojas/gofromscratch/files"
 	"github.com/jorojas/gofromscratch/keyboard"
 	"github.com/jorojas/gofromscratch/variables"
 )
@@ -41,5 +42,9 @@ func mainOFF() {
 }
 
 func main() {
-	exercises.ShowMultiplicationTable()
+	//fmt.Println(exercises.ShowMultiplicationTable())
+
+	//files.AddTable()
+
+	files.ReadFile()
 }
