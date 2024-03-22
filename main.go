@@ -9,7 +9,7 @@ import (
 	"github.com/jorojas/gofromscratch/variables"
 )
 
-func main() {
+func mainOFF() {
 	var status, value = variables.ConvertToText(10)
 	fmt.Println(value)
 	fmt.Println(status)
@@ -38,4 +38,8 @@ func main() {
 	fmt.Printf("%d %s\n", num, msg)
 
 	keyboard.InputNumbers()
+}
+
+func main() {
+	exercises.ShowMultiplicationTable()
 }
