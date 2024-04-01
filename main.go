@@ -5,8 +5,8 @@ import (
 	"runtime"
 
 	"github.com/jorojas/gofromscratch/exercises"
-	"github.com/jorojas/gofromscratch/files"
 	"github.com/jorojas/gofromscratch/keyboard"
+	"github.com/jorojas/gofromscratch/users"
 	"github.com/jorojas/gofromscratch/variables"
 )
 
@@ -46,5 +46,21 @@ func main() {
 
 	//files.AddTable()
 
-	files.ReadFile()
+	//files.ReadFile()
+
+	//functions.Calculations()
+
+	//functions.CallClosure()
+
+	//functions.Exponencia(2)
+
+	//arraysslices.ShowArrays()
+
+	//arraysslices.ShowSlice()
+
+	//arraysslices.Capacity()
+
+	//maps.ShowMaps()
+
+	users.CreateUser()
 }
