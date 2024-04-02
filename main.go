@@ -4,9 +4,12 @@ import (
 	"fmt"
 	"runtime"
 
+	exinterfaces "github.com/jorojas/gofromscratch/ex_interfaces"
 	"github.com/jorojas/gofromscratch/exercises"
+	"github.com/jorojas/gofromscratch/goroutines"
 	"github.com/jorojas/gofromscratch/keyboard"
-	"github.com/jorojas/gofromscratch/users"
+	"github.com/jorojas/gofromscratch/middleware"
+	"github.com/jorojas/gofromscratch/models"
 	"github.com/jorojas/gofromscratch/variables"
 )
 
@@ -62,5 +65,34 @@ func main() {
 
 	//maps.ShowMaps()
 
-	users.CreateUser()
+	//users.CreateUser()
+
+	//execInterfaceEx()
+
+	//deferpanic.PanicExample()
+
+	//execGoRoutines()
+
+	//webserver.MyWebServer()
+
+	middleware.MyMiddleware()
+
+}
+
+func execGoRoutines() {
+	channel1 := make(chan bool)
+
+	go goroutines.MySlowName("Jonathan Rojas", channel1)
+
+	defer func() {
+		<-channel1
+	}()
+}
+
+func execInterfaceEx() {
+	Pedro := new(models.Man)
+	Nataly := new(models.Woman)
+
+	exinterfaces.GetHumansBreathing(Pedro)
+	exinterfaces.GetHumansBreathing(Nataly)
 }
